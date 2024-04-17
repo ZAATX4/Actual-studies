@@ -1,0 +1,33 @@
+dados = open("dados.txt", "r")
+
+conteudo = dados.read()
+
+print(conteudo)
+
+dados.close()
+
+dadinho = open("dados2.txt", "w")
+
+dadinho.write("Você critou")
+
+print(dadinho)
+
+dadinho.close
+
+dados3 = open("dados3.txt", "r")
+
+linhas = dados3.readline()
+
+for linha in linhas:
+
+    print(linha)
+
+with open("dados4.txt", "a+") as dados4:
+
+print(dados4.seek(0, 0))
+
+dados4.write("\nGrande <3")
+
+dados4.close
+
+
